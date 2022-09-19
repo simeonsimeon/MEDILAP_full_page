@@ -868,15 +868,8 @@ let what=false;
 	
 	let arrow=document.getElementsByClassName("icofont-simple-down");
 	
-	let downorup=false;
-	function now(){
-	  downorup=!downorup;
-	  if(downorup){
-	  arrow.style.transform=rotate90deg;
-	  }else{
-	  arrow.style.transform="rotate(120deg)";
-	  }
-	
+	$(".icofont-simple-down").click(function(){
+	$(this).toggleClass("down");
 	}
 	
 	

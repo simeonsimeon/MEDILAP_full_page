@@ -2613,21 +2613,25 @@ quick .quick-whole .quick-left p:hover span{
 	display:inline-block;	
 	line-height:70px;
 	color: #437099;
+	margin-left:17px;
+	position:relative;
 }
 .head-whole .head-right ul li a{
-	padding-left:17px;
+	/*padding-left:17px;*/
+	padding:0;
 } 
 .head-whole .head-right ul li a::before{
 	content:"";
 	width:0px;
 	height:3px;
 	position:absolute;
-	 background: #1977cc;
-	 top:70%;
-	 z-index:1000;
+	background: #1977cc;
+	top:70%;
+	z-index:1000;
 }
-.head-whole .head-right ul li a::before:hover{
+.head-whole .head-right ul li:hover a::before{
 	width:100%;
+	transition:0.5s;
 }
 .head-whole .head-right ul li button{
 	padding:12px 30px 12px 30px;
@@ -3527,7 +3531,7 @@ padding:0px 15px 0px 15px;
 	width:50px;
 	background-color:blue;
 	position:absolute;
-	top:14.4%;
+	top:6.55rem;
 }
 .whole-ga{
 	width:98.2%;
